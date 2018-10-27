@@ -47,3 +47,18 @@ cat test.tar.gz | split -b 2G - test.tar.gz.
 # 将多个拆分的文件合并为一个文件
 cat test.tar.gz.a* > test.tar.gz
 ```
+
+## 5. 文件去重
+```sh
+# sort 去重，全局去重
+sort -u test.txt
+```
+
+ ```sh
+ sort test.txt | uniq
+ ```
+
+```sh
+# 去除连续的重复行
+uniq test.txt
+```
