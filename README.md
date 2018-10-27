@@ -62,3 +62,20 @@ sort -u test.txt
 # 去除连续的重复行
 uniq test.txt
 ```
+
+## 6. 文件交集和差集
+```sh
+# 两个文件的交集
+grep -F -f a.txt b.txt | sort | uniq
+```
+
+```sh
+# 两个文件的差集
+# B-A
+grep -F -v -f a.txt b.txt | sort | uniq
+```
+
+```sh
+# A-B
+grep -F -v -f b.txt a.txt | sort | uniq
+```
