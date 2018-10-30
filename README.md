@@ -79,3 +79,25 @@ grep -F -v -f a.txt b.txt | sort | uniq
 # A-B
 grep -F -v -f b.txt a.txt | sort | uniq
 ```
+
+## 7. Redis操作
+
+```sh
+# 登录Redis
+redis-cli
+```
+
+```sh
+# 清空数据库
+flushall
+```
+
+```sh
+# 查看所有key
+keys *
+```
+
+```sh
+# 导出Redis数据库
+redis-dump –u 127.0.0.1:6379 > db.rdb
+```
