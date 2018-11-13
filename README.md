@@ -1,4 +1,4 @@
-# useful-shell
+# :hammer: useful-shell
 收集自己常用的shell运维脚本
 
 ## 1. 统计行数
