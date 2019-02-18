@@ -101,3 +101,10 @@ keys *
 # 导出Redis数据库
 redis-dump –u 127.0.0.1:6379 > db.rdb
 ```
+
+## 8. 手动添加jar到maven仓库
+
+```sh
+# 手动添加jar到maven仓库
+mvn install:install-file -DgroupId=cn.com.test -DartifactId=test -Dversion=1.0.0 -Dpackaging=jar -Dfile=test.jar
+```
